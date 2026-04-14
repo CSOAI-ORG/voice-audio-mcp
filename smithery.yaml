@@ -1,0 +1,8 @@
+name: voice-audio-mcp
+description: MEOK AI Labs — voice audio
+vendor: MEOK AI Labs
+homepage: https://meok.ai
+repository: https://github.com/CSOAI-ORG/voice-audio-mcp
+license: MIT
+runtime: python
+entrypoint: server.py
