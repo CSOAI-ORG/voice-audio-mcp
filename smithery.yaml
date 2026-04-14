@@ -1,8 +1,48 @@
 name: voice-audio-mcp
-description: MEOK AI Labs — voice audio
-vendor: MEOK AI Labs
-homepage: https://meok.ai
-repository: https://github.com/CSOAI-ORG/voice-audio-mcp
-license: MIT
-runtime: python
-entrypoint: server.py
+description: "> **By [MEOK AI Labs](https://meok.ai)** \u2014 Sovereign AI tools for\
+  \ everyone."
+version: 1.0.0
+tools:
+- name: text_to_speech
+  description: Convert text to speech. Requires Kokoro TTS at localhost:8180.
+  parameters:
+  - name: text
+    type: string
+    required: true
+  - name: voice
+    type: string
+    required: false
+  - name: speed
+    type: number
+    required: false
+  - name: format
+    type: string
+    required: false
+- name: list_voices
+  description: List available voice profiles.
+  parameters: []
+- name: transcribe
+  description: Transcribe audio to text using Whisper. Provide audio file path or
+    URL.
+  parameters:
+  - name: audio_url
+    type: string
+    required: false
+  - name: language
+    type: string
+    required: false
+- name: voice_profile
+  description: Create or update a custom voice profile.
+  parameters:
+  - name: name
+    type: string
+    required: true
+  - name: gender
+    type: string
+    required: false
+  - name: accent
+    type: string
+    required: false
+  - name: style
+    type: string
+    required: false

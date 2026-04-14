@@ -1,1 +1,80 @@
-{"name":"voice-audio-mcp","vendor":"MEOK AI Labs","homepage":"https://meok.ai","repository":"https://github.com/CSOAI-ORG/voice-audio-mcp","runtime":"python","entrypoint":"server.py"}
+{
+  "name": "voice-audio-mcp",
+  "description": "> **By [MEOK AI Labs](https://meok.ai)** \u2014 Sovereign AI tools for everyone.",
+  "version": "1.0.0",
+  "tools": [
+    {
+      "name": "text_to_speech",
+      "description": "Convert text to speech. Requires Kokoro TTS at localhost:8180.",
+      "parameters": {
+        "type": "object",
+        "properties": {
+          "text": {
+            "type": "string"
+          },
+          "voice": {
+            "type": "string"
+          },
+          "speed": {
+            "type": "number"
+          },
+          "format": {
+            "type": "string"
+          }
+        },
+        "required": [
+          "text"
+        ]
+      }
+    },
+    {
+      "name": "list_voices",
+      "description": "List available voice profiles.",
+      "parameters": {
+        "type": "object",
+        "properties": {},
+        "required": []
+      }
+    },
+    {
+      "name": "transcribe",
+      "description": "Transcribe audio to text using Whisper. Provide audio file path or URL.",
+      "parameters": {
+        "type": "object",
+        "properties": {
+          "audio_url": {
+            "type": "string"
+          },
+          "language": {
+            "type": "string"
+          }
+        },
+        "required": []
+      }
+    },
+    {
+      "name": "voice_profile",
+      "description": "Create or update a custom voice profile.",
+      "parameters": {
+        "type": "object",
+        "properties": {
+          "name": {
+            "type": "string"
+          },
+          "gender": {
+            "type": "string"
+          },
+          "accent": {
+            "type": "string"
+          },
+          "style": {
+            "type": "string"
+          }
+        },
+        "required": [
+          "name"
+        ]
+      }
+    }
+  ]
+}
