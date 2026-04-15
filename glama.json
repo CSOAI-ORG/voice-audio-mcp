@@ -1,0 +1,10 @@
+{
+  "name": "voice-audio-mcp",
+  "description": "MEOK AI Labs \u2014 voice-audio-mcp",
+  "vendor": "MEOK AI Labs",
+  "homepage": "https://meok.ai",
+  "repository": "https://github.com/CSOAI-ORG/voice-audio-mcp",
+  "license": "MIT",
+  "runtime": "python",
+  "entryPoint": "mcp-wrapper.py"
+}

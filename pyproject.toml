@@ -22,3 +22,6 @@ Repository = "https://github.com/CSOAI-ORG/voice-audio-mcp"
 [tool.hatch.build.targets.wheel]
 packages = ["."]
 only-include = ["server.py"]
+
+[project.scripts]
+voice_audio_mcp = "server:main"
