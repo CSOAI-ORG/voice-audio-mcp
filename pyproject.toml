@@ -4,7 +4,7 @@ build-backend = "hatchling.build"
 [project]
 name = "voice-audio-mcp"
 version = "1.0.0"
-description = "MEOK AI Labs — voice-audio-mcp"
+description = "Voice Audio MCP server. Tools: text to speech, list voices, transcribe. Built by MEOK AI Labs."
 license = {file = "LICENSE"}
 requires-python = ">=3.10"
 authors = [{name = "MEOK AI Labs", email = "nicholas@meok.ai"}]

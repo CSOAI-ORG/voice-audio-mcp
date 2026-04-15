@@ -1,1 +1,11 @@
-{"name":"voice-audio-mcp","version":"1.0.0","description":"MEOK AI Labs — SOV3 Intelligence","author":"MEOK AI Labs","license":"MIT","repository":{"type":"git","url":"https://github.com/CSOAI-ORG/voice-audio-mcp"}}
+{
+  "name": "voice-audio-mcp",
+  "version": "1.0.0",
+  "description": "Voice Audio MCP server. Tools: text to speech, list voices, transcribe. Built by MEOK AI Labs.",
+  "author": "MEOK AI Labs",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/CSOAI-ORG/voice-audio-mcp"
+  }
+}
