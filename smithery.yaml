@@ -1,6 +1,6 @@
 name: voice-audio-mcp
-description: "> **By [MEOK AI Labs](https://meok.ai)** \u2014 Sovereign AI tools for\
-  \ everyone."
+description: "MEOK AI Labs \u2014 Voice & Audio. TTS, voice cloning, audio generation,\
+  \ transcription. Integrates with K"
 version: 1.0.0
 tools:
 - name: text_to_speech
