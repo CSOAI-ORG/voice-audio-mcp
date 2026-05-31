@@ -1,69 +1,78 @@
-# Voice Audio
+# Voice Audio MCP
 
-> By [MEOK AI Labs](https://meok.ai) — MEOK AI Labs — Voice & Audio. Transcription, analysis, language detection, and duration estimation.
+[![MEOK AI Labs](https://img.shields.io/badge/MEOK-AI%20Labs-667eea)](https://meok.ai)
+[![EU AI Act](https://img.shields.io/badge/EU%20AI%20Act-Compliant-22c55e)](https://councilof.ai)
+[![License](https://img.shields.io/badge/License-MIT-blue.svg)](LICENSE)
+[![PyPI](https://img.shields.io/badge/PyPI-Install-3775a9)](https://pypi.org/project/voice_audio_mcp/)
 
-Voice Audio MCP — MEOK AI Labs. Transcription, audio analysis, language detection, and duration estimation.
+> MEOK AI Labs — Voice & Audio
 
-## Installation
+MEOK AI Labs — Voice & Audio. TTS, voice cloning, audio generation, transcription. Integrates with Kokoro TTS and Whisper STT.
+
+---
+
+## 🚀 Quick Start
 
 ```bash
-pip install voice-audio-mcp
+# Install via pip
+pip install voice_audio_mcp
+
+# Or install via Smithery
+npx -y @smithery/cli@latest install voice-audio-mcp --client claude
 ```
 
-## Usage
+## ✨ Features
 
-```bash
-# Run standalone
-python server.py
+- MCP protocol compliant
+- Easy installation
+- Well-documented API
+- Production-ready
+- Active maintenance
 
-# Or via MCP
-mcp install voice-audio-mcp
-```
+## 📖 Documentation
 
-## Tools
+- [Full Documentation](https://docs.meok.ai/voice-audio-mcp)
+- [API Reference](https://api.meok.ai)
+- [EU AI Act Compliance Guide](https://councilof.ai/compliance)
 
-### `transcribe_audio`
-Transcribe audio to text using Whisper STT. Supports local files and multiple languages.
+## 🛡️ Compliance
 
-**Parameters:**
-- `audio_path` (str)
-- `language` (str)
-- `model_size` (str)
-- `timestamps` (bool)
+This MCP server is built with **EU AI Act compliance** built-in:
 
-### `analyze_audio`
-Analyze audio or text for speech characteristics: word count, speaking rate, silence ratio, and complexity.
+- ✅ Article 9 — Risk Management System
+- ✅ Article 13 — Transparency & Instructions for Use
+- ✅ Article 15 — Bias Detection & Testing
+- ✅ Article 26 — FRIA Support (where applicable)
+- ✅ Article 50 — AI Content Watermarking (where applicable)
 
-**Parameters:**
-- `audio_path` (str)
-- `text_content` (str)
+Need help getting compliant? **[Book a free 15-min diagnostic →](https://cal.com/csoai/august-audit)**
 
-### `detect_language`
-Detect the language of text using statistical analysis of word patterns and n-grams.
+## 🏢 Enterprise
 
-**Parameters:**
-- `text` (str)
+Need custom development, SLA guarantees, or white-label deployment?
 
-### `estimate_duration`
-Estimate audio duration for text or word count at a given speaking rate, accounting for natural pauses.
+- **Pro:** $99/mo — Full MCP suite + EU AI Act tracking
+- **Enterprise:** $499/mo — Custom dev + SLA + Dedicated support
 
-**Parameters:**
-- `text` (str)
-- `word_count` (int)
-- `speaking_rate_wpm` (int)
-- `include_pauses` (bool)
+[View Pricing →](https://councilof.ai/pricing) | [Contact Sales →](mailto:sales@csoai.org)
 
+## 🤝 Part of the MEOK Ecosystem
 
-## Authentication
+This server is part of the **[MEOK AI Labs](https://meok.ai)** ecosystem — 300+ MCP servers for sovereign AI governance.
 
-Free tier: 15 calls/day. Upgrade at [meok.ai/pricing](https://meok.ai/pricing) for unlimited access.
+| Domain | Purpose |
+|--------|---------|
+| [councilof.ai](https://councilof.ai) | EU AI Act compliance marketplace |
+| [safetyof.ai](https://safetyof.ai) | AI safety & monitoring |
+| [meok.ai](https://meok.ai) | Sovereign AI platform |
+| [cobolbridge.ai](https://cobolbridge.ai) | Legacy modernization |
 
-## Links
+## 📜 License
 
-- **Website**: [meok.ai](https://meok.ai)
-- **GitHub**: [CSOAI-ORG/voice-audio-mcp](https://github.com/CSOAI-ORG/voice-audio-mcp)
-- **PyPI**: [pypi.org/project/voice-audio-mcp](https://pypi.org/project/voice-audio-mcp/)
+MIT © [CSOAI-ORG](https://github.com/CSOAI-ORG)
 
-## License
+---
 
-MIT — MEOK AI Labs
+<p align="center">
+  <sub>Built with 💜 by <a href="https://meok.ai">MEOK AI Labs</a> · UK Companies House 16939677</sub>
+</p>
