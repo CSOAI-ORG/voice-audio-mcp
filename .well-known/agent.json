@@ -1,0 +1,59 @@
+{
+  "name": "voice-audio-mcp",
+  "description": "Voice Audio MCP server. Tools: text to speech, list voices, transcribe. Built by MEOK AI Labs.",
+  "url": "https://proofof.ai/scorecard/voice-audio-mcp.html",
+  "version": "1.0.4",
+  "protocolVersion": "0.2.0",
+  "provider": {
+    "organization": "MEOK AI Labs",
+    "url": "https://meok.ai"
+  },
+  "capabilities": {
+    "streaming": false,
+    "pushNotifications": false
+  },
+  "defaultInputModes": [
+    "text"
+  ],
+  "defaultOutputModes": [
+    "text"
+  ],
+  "skills": [
+    {
+      "id": "transcribe_audio",
+      "name": "Transcribe Audio",
+      "description": "transcribe_audio via voice-audio-mcp",
+      "tags": [
+        "mcp",
+        "compliance"
+      ]
+    },
+    {
+      "id": "analyze_audio",
+      "name": "Analyze Audio",
+      "description": "analyze_audio via voice-audio-mcp",
+      "tags": [
+        "mcp",
+        "compliance"
+      ]
+    },
+    {
+      "id": "detect_language",
+      "name": "Detect Language",
+      "description": "detect_language via voice-audio-mcp",
+      "tags": [
+        "mcp",
+        "compliance"
+      ]
+    },
+    {
+      "id": "estimate_duration",
+      "name": "Estimate Duration",
+      "description": "estimate_duration via voice-audio-mcp",
+      "tags": [
+        "mcp",
+        "compliance"
+      ]
+    }
+  ]
+}

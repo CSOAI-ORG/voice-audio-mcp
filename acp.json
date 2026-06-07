@@ -1,0 +1,22 @@
+{
+  "acpVersion": "0.1",
+  "agent": {
+    "name": "voice-audio-mcp",
+    "description": "Voice Audio MCP server. Tools: text to speech, list voices, transcribe. Built by MEOK AI Labs.",
+    "version": "1.0.4",
+    "provider": "MEOK AI Labs",
+    "interfaces": [
+      {
+        "type": "mcp",
+        "transport": "stdio",
+        "package": "voice-audio-mcp"
+      }
+    ],
+    "capabilities": [
+      "transcribe_audio",
+      "analyze_audio",
+      "detect_language",
+      "estimate_duration"
+    ]
+  }
+}
