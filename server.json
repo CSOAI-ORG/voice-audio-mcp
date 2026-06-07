@@ -1,0 +1,20 @@
+{
+  "$schema": "https://static.modelcontextprotocol.io/schemas/2025-07-09/server.json",
+  "name": "io.github.CSOAI-ORG/voice-audio-mcp",
+  "description": "Voice Audio MCP server. Tools: text to speech, list voices, transcribe. Built by MEOK AI Labs.",
+  "version": "1.0.4",
+  "repository": {
+    "url": "https://github.com/CSOAI-ORG/voice-audio-mcp",
+    "source": "github"
+  },
+  "packages": [
+    {
+      "registry_type": "pypi",
+      "identifier": "voice-audio-mcp",
+      "version": "1.0.4",
+      "transport": {
+        "type": "stdio"
+      }
+    }
+  ]
+}

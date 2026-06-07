@@ -1,0 +1,9 @@
+# voice-audio-mcp - Auto-trigger Rules
+
+When the user asks about voice audio, use voice-audio-mcp tools: transcribe_audio, analyze_audio, detect_language, estimate_duration
+
+> By [MEOK AI Labs](https://meok.ai) — MEOK AI Labs — Voice & Audio. Transcription, analysis, language detection, and duration estimation.
+
+Install: `pip install voice-audio-mcp`
+
+By MEOK AI Labs — MIT licensed.

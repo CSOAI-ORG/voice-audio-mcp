@@ -1,8 +1,8 @@
 #!/usr/bin/env python3
-"""Voice Audio MCP — MEOK AI Labs. Transcription, audio analysis, language detection, and duration estimation."""
+"""
+Voice Audio MCP — MEOK AI Labs. Transcription, audio analysis, language detection, and duration estimation."""
 
 import sys, os
-sys.path.insert(0, os.path.expanduser('~/clawd/meok-labs-engine/shared'))
 from auth_middleware import check_access
 
 import json, hashlib, base64, re
@@ -64,7 +64,7 @@ def transcribe_audio(audio_path: str = "", language: str = "auto",
     """Transcribe audio to text using Whisper STT. Supports local files and multiple languages."""
     allowed, msg, tier = check_access(api_key)
     if not allowed:
-        return {"error": msg, "upgrade_url": "https://meok.ai/pricing"}
+        return {"error": msg, "upgrade_url": "https://councilof.ai"}
     if err := _rl(): return err
 
     if not audio_path:
@@ -118,7 +118,7 @@ def analyze_audio(audio_path: str = "", text_content: str = "", api_key: str = "
     """Analyze audio or text for speech characteristics: word count, speaking rate, silence ratio, and complexity."""
     allowed, msg, tier = check_access(api_key)
     if not allowed:
-        return {"error": msg, "upgrade_url": "https://meok.ai/pricing"}
+        return {"error": msg, "upgrade_url": "https://councilof.ai"}
     if err := _rl(): return err
 
     if text_content:
@@ -177,7 +177,7 @@ def detect_language(text: str, api_key: str = "") -> str:
     """Detect the language of text using statistical analysis of word patterns and n-grams."""
     allowed, msg, tier = check_access(api_key)
     if not allowed:
-        return {"error": msg, "upgrade_url": "https://meok.ai/pricing"}
+        return {"error": msg, "upgrade_url": "https://councilof.ai"}
     if err := _rl(): return err
 
     if not text or len(text.strip()) < 5:
@@ -242,7 +242,7 @@ def estimate_duration(text: str = "", word_count: int = 0, speaking_rate_wpm: in
     """Estimate audio duration for text or word count at a given speaking rate, accounting for natural pauses."""
     allowed, msg, tier = check_access(api_key)
     if not allowed:
-        return {"error": msg, "upgrade_url": "https://meok.ai/pricing"}
+        return {"error": msg, "upgrade_url": "https://councilof.ai"}
     if err := _rl(): return err
 
     if text:
@@ -290,5 +290,8 @@ def estimate_duration(text: str = "", word_count: int = 0, speaking_rate_wpm: in
     }
 
 
-if __name__ == "__main__":
+def main():
     mcp.run()
+
+if __name__ == '__main__':
+    main()
